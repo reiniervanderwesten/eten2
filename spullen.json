@@ -1,0 +1,100 @@
+{
+  "hamburgers": [
+    {
+      "id": "1",
+      "naam": "runderburger",
+      "prijs": 2.1
+    },
+    {
+      "id": "2",
+      "naam": "kipburger",
+      "prijs": 3.2
+    },
+    {
+      "id": "3",
+      "naam": "Hawaiiburger",
+      "prijs": 3.8
+    }
+  ],
+  "bijgerechten": [
+    {
+      "id": "1",
+      "naam": "salade",
+      "prijs": 1.5
+    },
+    {
+      "id": "2",
+      "naam": "patat",
+      "prijs": 2.2
+    },
+    {
+      "id": "3",
+      "naam": "Vlaamse friet",
+      "prijs": 2.5
+    }
+  ],
+  "frisdranken": [
+    {
+      "naam": "cola",
+      "prijs": 3.1,
+      "id": "1"
+    },
+    {
+      "naam": "fanta",
+      "prijs": 3.3,
+      "id": "2"
+    },
+    {
+      "naam": "sprite",
+      "prijs": 4.1,
+      "id": "3"
+    }
+  ],
+  "bestelling": {
+    "id": "1",
+    "ingredienten": "",
+    "bedrag": 0
+  },
+  "bestellingen": [
+    {
+      "id": "1",
+      "ordernaam": "kipburger",
+      "orderbedrag": 3.2
+    },
+    {
+      "ordernaam": " -kipburger -Hawaiiburger",
+      "orderbedrag": 7,
+      "id": "F-f35mt"
+    },
+    {
+      "ordernaam": " -Hawaiiburger",
+      "orderbedrag": 3.8,
+      "id": "iEcU4aW"
+    },
+    {
+      "ordernaam": " -Hawaiiburger",
+      "orderbedrag": 3.8,
+      "id": "Z_kmiCt"
+    },
+    {
+      "ordernaam": " -Hawaiiburger",
+      "orderbedrag": 3.8,
+      "id": "c1UgAJU"
+    },
+    {
+      "ordernaam": " -Hawaiiburger -runderburger",
+      "orderbedrag": 5.9,
+      "id": "0Io_MgL"
+    },
+    {
+      "ordernaam": " -Vlaamse friet",
+      "orderbedrag": 2.5,
+      "id": "8qz3OJi"
+    },
+    {
+      "ordernaam": " -salade",
+      "orderbedrag": 1.5,
+      "id": "pZ2_OuG"
+    }
+  ]
+}
