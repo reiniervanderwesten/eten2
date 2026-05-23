@@ -53,7 +53,7 @@
   "bestelling": {
     "id": "1",
     "ingredienten": ["kipburger", "Hawaiiburger"],
-    "bedrag": [3.2, 3.7]
+    "bedrag": [3.2, 3.8]
   },
   "bestellingen": [
     {
