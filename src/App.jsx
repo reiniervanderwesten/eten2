@@ -49,6 +49,8 @@ export const App = () => {
 
   const handleClick= (leuk, leuker)=>{
     
+    bestelling.ingredienten.push(leuk)
+    bestelling.bedrag.push(leuker)
     
 
     
@@ -56,9 +58,10 @@ export const App = () => {
         method: "PATCH",
         headers: {"Content-Type": "application/json;charset=utf-8"},
         body: JSON.stringify({
-          ingredienten: bestelling.ingredienten + " -" + leuk,         
+          ingredienten: bestelling.ingredienten,
+          bedrag:     bestelling.bedrag      
             
-          bedrag: bestelling.bedrag + leuker,
+          
           
         
         })

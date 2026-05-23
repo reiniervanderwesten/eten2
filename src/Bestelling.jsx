@@ -93,7 +93,7 @@ export const Bestelling = () => {
               {bestelling.ingredienten.map((ingredient, {index})=>(
           
             
-                 <Text key={index}>{ingredient}</Text>
+                 <Button key={index}>{ingredient}</Button>
             
             
 
