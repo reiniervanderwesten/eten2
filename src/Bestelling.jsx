@@ -90,7 +90,7 @@ export const Bestelling = () => {
 
             <Flex gap={4} ml={4} width={'100%'} flexDir={'column'} flexWrap={'wrap'} alignContent={'flex-start'} margin={2}>
               
-              {bestelling.ingredienten.map((ingredient, index)=>(
+              {bestelling.ingredienten.map((ingredient, {index})=>(
           
             
                  <Text key={index}>{ingredient}</Text>
@@ -99,7 +99,7 @@ export const Bestelling = () => {
 
           
 
-        ))}
+             ))}
 
               
               
