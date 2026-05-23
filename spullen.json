@@ -52,20 +52,8 @@
   ],
   "bestelling": {
     "id": "1",
-    "ingredienten": [
-      "kipburger",
-      "Hawaiiburger",
-      "runderburger",
-      "salade",
-      "cola"
-    ],
-    "bedrag": [
-      3.2,
-      3.8,
-      2.1,
-      1.5,
-      3.1
-    ]
+    "ingredienten": [],
+    "bedrag": []
   },
   "bestellingen": [
     {
