@@ -89,8 +89,8 @@ export const Bestelling = () => {
             <Heading>Uw bestelling</Heading>
 
             <Flex gap={4} ml={4} width={'100%'} flexDir={'column'} flexWrap={'wrap'} alignContent={'flex-start'} margin={2}>
-              <Text w='fit-content'>{ordernaam}</Text>
-              <Text>{orderbedrag}</Text>
+              
+              
               
               
               
