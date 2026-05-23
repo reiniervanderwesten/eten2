@@ -84,19 +84,21 @@ export const Bestelling = () => {
   return (
     
         <>
-          <Flex h='fit-content' w='90%' flexDir= {'column'} mb={2} padding={10}>
+          <Flex h='fit-content' w='90%' flexDir= {'column'} mb={2} padding={10} >
 
             <Heading>Uw bestelling</Heading>
 
             <Flex gap={4} ml={4} width={'100%'} flexDir={'column'} flexWrap={'wrap'} alignContent={'flex-start'} margin={2}>
               <Text w='fit-content'>{ordernaam}</Text>
               <Text>{orderbedrag}</Text>
-              <Button onClick={() => clearBestelling()}>Clear</Button>
-              <Button onClick={() => handleBestelling()}>plaats bestelling</Button>
+              
+              
               
 
               
             </Flex>
+            <Button w= 'fit-content' m= {2} onClick={() => clearBestelling()}>Clear</Button>
+            <Button w= 'fit-content' m= {2} onClick={() => handleBestelling()}>plaats bestelling</Button>
           </Flex>
             
           
