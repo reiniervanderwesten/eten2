@@ -24,27 +24,7 @@ export const Bestelling = () => {
   const [orderbedrag, setOrderbedrag]=useState(bestelling.bedrag);
   const navigate=useNavigate();
 
-  const clearBestelling= async()=>{
-    
-    
-
-    
-      await fetch(`http://localhost:3000/bestelling`, {
-        method: "PATCH",
-        headers: {"Content-Type": "application/json;charset=utf-8"},
-        body: JSON.stringify({
-          ingredienten: [],         
-            
-          bedrag: [],
-          
-        
-        })
-
-      });
-
-      setOrdernaam("");
-      setOrderbedrag(0);
-  }
+  
 
   const deleteBestelling= (gerecht)=>{
     
@@ -144,7 +124,7 @@ export const Bestelling = () => {
 
               
             </Flex>
-            <Button w= 'fit-content' m= {2} onClick={() => clearBestelling()}>Clear</Button>
+            
             <Button w= 'fit-content' m= {2} onClick={() => handleBestelling()}>plaats bestelling</Button>
           </Flex>
             
