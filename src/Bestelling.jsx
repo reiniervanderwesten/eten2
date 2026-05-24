@@ -45,6 +45,42 @@ export const Bestelling = () => {
       setOrdernaam("");
       setOrderbedrag(0);
   }
+
+  const deleteBestelling= (gerecht)=>{
+    
+    const index=bestelling.ingredienten.indexOf(gerecht);
+
+    if (index>-1){
+      bestelling.ingredienten.splice(index,1);
+    }
+
+
+    
+    
+
+    
+    fetch(`http://localhost:3000/bestelling`, {
+        method: "PATCH",
+        headers: {"Content-Type": "application/json;charset=utf-8"},
+        body: JSON.stringify({
+          ingredienten: bestelling.ingredienten,
+          bedrag:     bestelling.bedrag      
+            
+          
+          
+        
+        })
+
+    });
+
+      
+
+    
+
+    
+
+    
+  }
   
   const plaatsBestelling=async(order)=>{
     const response= await fetch("http://localhost:3000/bestellingen",{
@@ -93,7 +129,7 @@ export const Bestelling = () => {
               {bestelling.ingredienten.map((ingredient, {index})=>(
           
             
-                 <Button key={index}>{ingredient}</Button>
+                 <Button key={index} onClick={()=>deleteBestelling(ingredient)}>{ingredient}</Button>
             
             
 
