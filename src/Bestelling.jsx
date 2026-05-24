@@ -51,7 +51,8 @@ export const Bestelling = () => {
     const index=bestelling.ingredienten.indexOf(gerecht);
 
     if (index>-1){
-      bestelling.ingredienten.splice(index,1);
+      bestelling.ingredienten.splice(index,1)
+      bestelling.bedrag.splice(index,1);
     }
 
 
